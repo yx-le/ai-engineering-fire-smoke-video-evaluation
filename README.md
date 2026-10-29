@@ -86,6 +86,7 @@ Use a manually checked, video-level split to avoid placing near-identical neighb
 
 ```text
 README.md
+submission_url.txt
 docs/
   week1_observation_sheet.md
   week1_system_map.png
@@ -93,6 +94,9 @@ docs/
   group_evidence/
     README.md
     evidence/
+    part_b/
+      week1_system_map.drawio
+      week1_system_map_notes.md
 data/
   .gitkeep
 src/
