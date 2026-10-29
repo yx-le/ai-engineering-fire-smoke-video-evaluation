@@ -1,4 +1,3 @@
-Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.
 # FireSmoke Video Robustness Evaluator
 
 > A proposed offline evaluation tool for reviewing how video-based fire and smoke detectors behave across public research clips and difficult scenes.
@@ -68,7 +67,7 @@ Use a manually checked, video-level split to avoid placing near-identical neighb
 ## Week 1 repository checklist
 
 - [x] Individual project name and initial scope drafted.
-- [ ] Create the individual GitHub repository and publish this README and `docs/week1_project_scope.md`.
+- [x] Create the individual GitHub repository and publish this README and `docs/week1_project_scope.md`.
 - [x] Copy the group's Part A observation sheet, approved Part B system-map PNG and three supporting screenshots into `docs/group_evidence/`.
 - [ ] Submit the individual repository URL on the course portal.
 
