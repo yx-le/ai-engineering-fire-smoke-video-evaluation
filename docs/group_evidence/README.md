@@ -1,4 +1,3 @@
-Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.
 # Group Part A/B evidence
 
 The group's Part A/B evidence has been copied into this individual project folder:
