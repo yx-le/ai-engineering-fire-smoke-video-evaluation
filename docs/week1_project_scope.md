@@ -23,10 +23,10 @@ These sources support the need to document dataset scope and evaluate conditions
 
 ## Initial related work / existing approaches
 
-1. **Fire and smoke detection from videos: a literature review under a novel taxonomy.** Reviews methods and 17 public datasets; distinguishes scenario factors such as fire size and background activity. Limitation: it is an overview, not an offline evaluation workflow for inspecting a student's detector errors.
-2. **Boreal Forest Fire video dataset.** Public research resource with annotated smoke videos/images from prescribed burns at four Finnish locations. Limitation: its wildland smoke setting does not cover indoor fires or all camera conditions.
-3. **FireAndSmoke open dataset and detector comparison.** Provides more than 22,000 annotated images from video sequences and static images, with difficult negative cases. Limitation: image-level benchmark results do not by themselves measure temporal event detection or detection delay.
-4. **NIST physical smoke-alarm performance studies.** Provide controlled evidence about physical alarm response. Limitation: they are not tests of computer-vision systems and cannot be used to certify a video model.
+1. **Fire and smoke detection from videos: a literature review under a novel taxonomy.** Reviews methods and 17 public datasets; distinguishes scenario factors such as fire size and background activity. [Source](https://www.sciencedirect.com/science/article/pii/S0957417424016506). Limitation: it is an overview, not an offline evaluation workflow for inspecting a student's detector errors.
+2. **Boreal Forest Fire video dataset.** Public research resource with annotated smoke videos/images from prescribed burns at four Finnish locations. [Source](https://research.aalto.fi/en/datasets/boreal-forest-fire-uav-collected-wildfire-detection-and-smoke-seg/). Limitation: its wildland smoke setting does not cover indoor fires or all camera conditions.
+3. **FireAndSmoke open dataset and detector comparison.** Provides more than 22,000 annotated images from video sequences and static images, with difficult negative cases. [Source](https://www.mdpi.com/1424-8220/24/17/5597). Limitation: image-level benchmark results do not by themselves measure temporal event detection or detection delay.
+4. **NIST physical smoke-alarm performance studies.** Provide controlled evidence about physical alarm response. [Source](https://www.nist.gov/publications/performance-new-and-aged-residential-fire-smoke-detectors). Limitation: they are not tests of computer-vision systems and cannot be used to certify a video model.
 
 ## Engineering gap / limitation
 
@@ -73,5 +73,5 @@ Use video-level or source-event-level train/test partitions where possible to av
 
 ## Week 1 status
 
-This is an initial scope, not a working application. The group's Part A observation sheet, approved conceptual system-map PNG and supporting screenshots have been copied into `docs/group_evidence/` as separate Week 1 group evidence.
+This is an initial scope, not a working application. The group's Part A observation sheet and approved conceptual system-map PNG are the other two Week 1 files in `docs/`. Three supporting screenshots are stored under `docs/group_evidence/evidence/`.
 
