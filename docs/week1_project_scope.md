@@ -1,4 +1,3 @@
-Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.
 # Week 1 Project Scope — FireSmoke Video Robustness Evaluator
 
 ## Project name
