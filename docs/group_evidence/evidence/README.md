@@ -1,4 +1,3 @@
-Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.
 # Part A — ChatGPT Test Evidence
 
 Original screenshots supplied by the student, dated 27 October 2026. These three images cover the recommended evidence selection:
