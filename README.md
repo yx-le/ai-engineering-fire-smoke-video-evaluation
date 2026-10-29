@@ -93,10 +93,15 @@ docs/
   group_evidence/
     README.md
     evidence/
-data/.gitkeep
-src/.gitkeep
-notebooks/.gitkeep
-evaluation/.gitkeep
-prompts/.gitkeep
+data/
+  .gitkeep
+src/
+  .gitkeep
+notebooks/
+  .gitkeep
+evaluation/
+  .gitkeep
+prompts/
+  .gitkeep
 ```
 
