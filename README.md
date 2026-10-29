@@ -82,7 +82,7 @@ Use a manually checked, video-level split to avoid placing near-identical neighb
 | --- | --- | --- | --- |
 | W1 | System map + project scope | README + docs | Complete |
 
-## Planned structure
+## Repository Structure
 
 ```text
 README.md
@@ -93,10 +93,10 @@ docs/
   group_evidence/
     README.md
     evidence/
-data/
-src/
-notebooks/
-evaluation/
-prompts/
+data/.gitkeep
+src/.gitkeep
+notebooks/.gitkeep
+evaluation/.gitkeep
+prompts/.gitkeep
 ```
 
