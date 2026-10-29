@@ -1,4 +1,3 @@
-Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.
 # AI Engineering — Topic 1 Lab: Part A Observation Sheet
 
 **System name:** ChatGPT (OpenAI)  
@@ -116,11 +115,11 @@ Skipped per the lecturer's direction. No observation from another group is claim
 
 ## Evidence checklist
 
-The student supplied real images of all five tests in the conversation. The following three original screenshots are uploaded under `docs/evidence/`:
+The student supplied real images of all five tests in the conversation. The following three original screenshots are uploaded under `docs/group_evidence/evidence/`:
 
-- [x] `docs/evidence/chatgpt_q1_capital.png`
-- [x] `docs/evidence/chatgpt_q3_ambiguity.png`
-- [x] `docs/evidence/chatgpt_q5_safety.png`
+- [x] `docs/group_evidence/evidence/chatgpt_q1_capital.png`
+- [x] `docs/group_evidence/evidence/chatgpt_q3_ambiguity.png`
+- [x] `docs/group_evidence/evidence/chatgpt_q5_safety.png`
 
 Additional screenshots supplied in the conversation (not uploaded here): `chatgpt_q2_recent_events.png` and `chatgpt_q4_flight_booking.png`.
 
