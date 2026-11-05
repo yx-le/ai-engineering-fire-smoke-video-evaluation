@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-05T00:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="firesmoke-v1" name="V1 Architecture">
+    <mxGraphModel dx="2360" dy="1360" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2360" pageHeight="1360" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="FireSmoke Video Robustness Evaluator — V1 Conceptual Architecture" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=30;fontColor=#16324F;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="2200" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Offline evaluation of permitted prerecorded clips. No live camera, alarm, sensor-fusion, or operational safety path." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=17;fontColor=#526579;" vertex="1" parent="1">
+          <mxGeometry x="60" y="103" width="2200" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_heading" value="Primary information flow" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=18;fontColor=#526579;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="205" width="450" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_user_interface" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#596B7A;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="user" target="interface">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_interface_gate" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#596B7A;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="interface" target="gate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_gate_sampler" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#596B7A;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="gate" target="sampler">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_sampler_detector" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#596B7A;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="sampler" target="detector">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_detector_metrics" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#596B7A;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="detector" target="metrics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_metrics_report" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#596B7A;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="metrics" target="report">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_app_run_record" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#596B7A;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="interface" target="run_record">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_dataset_gate" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#596B7A;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="dataset" target="gate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_annotations_metrics" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#596B7A;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.81;" edge="1" parent="1" source="annotations" target="metrics">
+          <mxGeometry relative="1" as="geometry">
+            <Array>
+              <mxPoint x="1545" y="700" />
+              <mxPoint x="1545" y="540" />
+              <mxPoint x="1555" y="540" />
+              <mxPoint x="1555" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_criteria_metrics" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#8053B8;strokeWidth=2;endArrow=block;endFill=1;dashed=1;dashPattern=8 5;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="criteria" target="metrics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_rai_report" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D88A1D;strokeWidth=2;endArrow=block;endFill=1;dashed=1;dashPattern=8 5;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="rai_controls" target="report">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_run_report" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#596B7A;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0;entryY=0.8;" edge="1" parent="1" source="run_record" target="report">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="820" />
+              <mxPoint x="1910" y="820" />
+              <mxPoint x="1910" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_report_user" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#596B7A;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" edge="1" parent="1" source="report" target="user">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2300" y="385" />
+              <mxPoint x="2300" y="1120" />
+              <mxPoint x="155" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="user" value="&lt;b&gt;Student&lt;br/&gt;Researcher&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Select approved data&lt;br/&gt;Review metrics + errors&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;Intended user&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#DCEEFF;strokeColor=#3C82B8;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="200" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="interface" value="&lt;b&gt;Application Interface&lt;br/&gt;&amp; Run Setup&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Choose manifest + run settings&lt;br/&gt;Record detector version, run ID,&lt;br/&gt;and sampling settings&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;FR-02 · NFR-03&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#FFE8EC;strokeColor=#C85C73;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="265" width="260" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="gate" value="&lt;b&gt;Scope &amp; Manifest Gate&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Validate IDs, source/access,&lt;br/&gt;labels, and annotations&lt;br/&gt;Accept permitted clips only&lt;br/&gt;Reject incomplete or live inputs&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;FR-01 · RAI-05&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#FFF0D8;strokeColor=#D88A1D;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;dashed=1;dashPattern=8 5;" vertex="1" parent="1">
+          <mxGeometry x="640" y="265" width="290" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="sampler" value="&lt;b&gt;Offline Clip Sampler&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Read approved clips&lt;br/&gt;one at a time&lt;br/&gt;Send sampled frames with&lt;br/&gt;timestamps to detection&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;FR-02 · NFR-04&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#EAF0F6;strokeColor=#7186A2;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="990" y="265" width="235" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="detector" value="&lt;b&gt;Baseline Fire/Smoke&lt;br/&gt;Detection&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;AI capability&lt;br/&gt;Timestamped fire/smoke&lt;br/&gt;predictions + confidence&lt;br/&gt;when provided by detector&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;O2&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#E7F0FF;strokeColor=#3C6C9C;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1285" y="265" width="245" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="metrics" value="&lt;b&gt;Temporal Matcher&lt;br/&gt;&amp; Metrics&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Compare predictions to labels&lt;br/&gt;Frame + event measures&lt;br/&gt;Separate false alarms and misses&lt;br/&gt;Calculate delay when supported&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;FR-03 · NFR-01 · RAI-02/03&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#F0E7FC;strokeColor=#8053B8;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="250" width="300" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="report" value="&lt;b&gt;Research Report&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Metrics + traceable errors&lt;br/&gt;Clip/time links + coverage&lt;br/&gt;Unknown labels + limitations&lt;br/&gt;Research-only statement&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;FR-04/05 · RAI-01/04&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#EEF0F3;strokeColor=#616D7C;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="265" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="run_record" value="&lt;b&gt;Run Record&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Run ID, detector/version,&lt;br/&gt;thresholds, sampling settings,&lt;br/&gt;and selected clip IDs&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;NFR-03&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#EEF0F3;strokeColor=#7A8794;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="620" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dataset" value="&lt;b&gt;Permitted Public Data&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Prerecorded clips&lt;br/&gt;Source/access information&lt;br/&gt;Scene-condition metadata&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;O1 · FR-01 · RAI-05&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#E4F4E7;strokeColor=#368A55;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="640" y="620" width="290" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="annotations" value="&lt;b&gt;Reference Annotations&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Reviewed frame/event labels&lt;br/&gt;Use only where available&lt;br/&gt;Keep unknown labels explicit&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;FR-03 · RAI-02/04&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#E4F4E7;strokeColor=#368A55;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="620" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="criteria" value="&lt;b&gt;Evaluation Checkpoint&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;EC-01 to EC-05&lt;br/&gt;Metric accuracy · event errors&lt;br/&gt;Coverage + resource use&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;Part B criteria&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#F2E9FC;strokeColor=#8053B8;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;dashed=1;dashPattern=8 5;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="860" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rai_controls" value="&lt;b&gt;Responsible AI Output&lt;br/&gt;Control&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Show misses + false alarms&lt;br/&gt;Report coverage + limitations&lt;br/&gt;No alarm or emergency advice&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#526579&quot; style=&quot;font-size:12px&quot;&gt;RAI-01 to RAI-04&lt;/font&gt;" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#FFF0D8;strokeColor=#D88A1D;strokeWidth=2;fontSize=15;fontColor=#1B2B3A;align=center;verticalAlign=middle;spacing=12;dashed=1;dashPattern=8 5;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="610" width="300" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="dataset_label" value="dataset manifest" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=15;fontColor=#526579;" vertex="1" parent="1">
+          <mxGeometry x="650" y="530" width="270" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="criteria_label" value="EC-01 to EC-05" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=15;fontColor=#68439B;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="685" width="220" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="rai_label" value="RAI output checks" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=15;fontColor=#9A5D08;" vertex="1" parent="1">
+          <mxGeometry x="1990" y="535" width="220" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="run_label" value="run provenance" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=15;fontColor=#526579;" vertex="1" parent="1">
+          <mxGeometry x="980" y="800" width="220" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="return_label" value="Report returned for student review" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=15;fontColor=#526579;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1085" width="520" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_heading" value="Legend" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=16;fontColor=#16324F;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1215" width="90" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_swatch_1" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#DCEEFF;strokeColor=#3C82B8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1217" width="30" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_text_1" value="User" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;fontColor=#405366;" vertex="1" parent="1">
+          <mxGeometry x="199" y="1215" width="60" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_swatch_2" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFE8EC;strokeColor=#C85C73;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="270" y="1217" width="30" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_text_2" value="Application / interface" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;fontColor=#405366;" vertex="1" parent="1">
+          <mxGeometry x="309" y="1215" width="180" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_swatch_3" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E4F4E7;strokeColor=#368A55;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1217" width="30" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_text_3" value="Data source" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;fontColor=#405366;" vertex="1" parent="1">
+          <mxGeometry x="559" y="1215" width="110" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_swatch_4" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E7F0FF;strokeColor=#3C6C9C;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="690" y="1217" width="30" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_text_4" value="AI capability" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;fontColor=#405366;" vertex="1" parent="1">
+          <mxGeometry x="729" y="1215" width="125" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_swatch_5" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF0D8;strokeColor=#D88A1D;strokeWidth=2;dashed=1;dashPattern=6 4;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1217" width="30" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_text_5" value="Scope / Responsible AI control" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;fontColor=#405366;" vertex="1" parent="1">
+          <mxGeometry x="909" y="1215" width="270" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_swatch_6" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F2E9FC;strokeColor=#8053B8;strokeWidth=2;dashed=1;dashPattern=6 4;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="1217" width="30" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_text_6" value="Evaluation point" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;fontColor=#405366;" vertex="1" parent="1">
+          <mxGeometry x="1239" y="1215" width="170" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_note" value="Solid arrows show information flow. Dashed arrows show evaluation or responsible-output checks. V1 uses capability labels only." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;fontColor=#718096;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1270" width="2100" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
