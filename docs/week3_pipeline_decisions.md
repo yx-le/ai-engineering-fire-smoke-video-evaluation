@@ -6,6 +6,10 @@ The project selects the **computer-vision/image pathway**, adapted for prerecord
 
 ## Topic 2 requirements mapped to this pipeline
 
+- **FR-01 and RAI-05:** select identified clips and retain their source, access, and annotation references in the inventory and run manifest.
+- **FR-02:** restrict this V1 preparation run to the selected prerecorded clips; it does not accept a live stream or run a detector.
+- **NFR-03:** hold configuration fixed, record source/output fingerprints, and rerun the pathway to check repeatability.
+- **FR-03, FR-04, and RAI-02:** preserve clip IDs, frame timestamps, and label links for later traceable evaluation. These requirements are not fully evaluated here: the available labels are clip-level only, so event recall, missed-event timing, and detection delay remain unavailable.
 - **Modular pipeline:** source selection, ingestion, inspection, preparation, output validation, and lineage recording are separate stages with named inputs and outputs.
 - **Reproducibility:** configuration is explicit; inputs and outputs are fingerprinted with SHA-256; output archives use fixed ZIP member timestamps; the notebook reruns the selected pathway and compares source/output fingerprints and mappings.
 - **Data quality and validation:** check file presence/readability, label-table schema and clip coverage, video metadata, sampled-frame decode, output presence/non-zero size, archive contents, and output hashes.
