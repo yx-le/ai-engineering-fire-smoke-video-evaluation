@@ -100,7 +100,7 @@ docs/
   week3_partB_preparation.md
   week3_partB_manual_steps.md
   week3_partA_manual_steps.md
-  week3_partC_pipeline_decisions.md
+  week3_pipeline_decisions.md
   week3_partC_manual_steps.md
   week3_pipeline_diagram.drawio
   week3_pipeline_diagram.png
@@ -130,5 +130,6 @@ prompts/
 ```
 
 The Week 3 Part C outputs contain prepared frames and provenance metadata only. Raw videos remain outside the repository; follow the source dataset's access and redistribution terms.
+
 
 
