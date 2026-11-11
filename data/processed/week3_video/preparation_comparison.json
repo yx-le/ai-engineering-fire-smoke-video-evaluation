@@ -1,0 +1,32 @@
+{
+  "clip_details": {
+    "evo_10.mp4": {
+      "duration_seconds": 29.592,
+      "fps": 47.952,
+      "source_frames": 1419,
+      "frames_at_1_second": 30,
+      "frames_at_2_seconds": 15
+    },
+    "evo_11.mp4": {
+      "duration_seconds": 32.324,
+      "fps": 47.952,
+      "source_frames": 1550,
+      "frames_at_1_second": 33,
+      "frames_at_2_seconds": 17
+    }
+  },
+  "configurations": [
+    {
+      "interval_seconds": 1,
+      "max_edge": 640,
+      "sampled_frames": 63
+    },
+    {
+      "interval_seconds": 2,
+      "max_edge": 640,
+      "sampled_frames": 32
+    }
+  ],
+  "selected": "2-second interval, 640-pixel maximum edge",
+  "tradeoff": "Uses about half as many frames as 1-second sampling, reducing storage and review effort while retaining clip IDs and timestamps; sparse sampling may miss brief smoke changes."
+}

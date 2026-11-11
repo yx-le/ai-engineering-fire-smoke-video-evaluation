@@ -1,0 +1,88 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-11T10:24:47.469557+00:00",
+  "data_type": "video",
+  "configuration": {
+    "sample_interval_seconds": 2.0,
+    "max_edge": 640,
+    "jpeg_quality": 90,
+    "label_file": "video-ground-truths.csv"
+  },
+  "sources": [
+    {
+      "path": "evo_10.mp4",
+      "sha256": "b121507d77d433477e0de45b02f89ed4da58101bdf4d2129b66d99d07353f78b"
+    },
+    {
+      "path": "evo_11.mp4",
+      "sha256": "833746765ac31f7f8ca5a66ee0dc24cef1de40a8a997ea58a674d7139f03767e"
+    },
+    {
+      "path": "video-ground-truths.csv",
+      "sha256": "5e35aa75110e9ce7138bf0e31f8a06660b0e8759067f429bade01f03ccab8479"
+    }
+  ],
+  "inspection": {
+    "clips": [
+      {
+        "filename": "evo_10.mp4",
+        "readable_first_frame": true,
+        "width": 4096,
+        "height": 2160,
+        "fps": 47.952047952047955,
+        "frame_count": 1419,
+        "has_smoke": true,
+        "duration_seconds": 29.592062499999997
+      },
+      {
+        "filename": "evo_11.mp4",
+        "readable_first_frame": true,
+        "width": 4096,
+        "height": 2160,
+        "fps": 47.952047952047955,
+        "frame_count": 1550,
+        "has_smoke": true,
+        "duration_seconds": 32.32395833333333
+      }
+    ],
+    "label_rows": 288,
+    "label_columns": [
+      "Filename",
+      "Has Smoke"
+    ]
+  },
+  "processing": "Sample every 2.0 seconds; resize longest edge to <= 640 px; JPEG quality 90; preserve frame index, timestamp, clip ID, and label.",
+  "outputs": [
+    {
+      "path": "data/pipeline_v1/video/evo_10_frames.zip",
+      "sha256": "6b3ad30c17ee46403f37023c5f24be74559dc421eba68107e5902517f2224e00",
+      "bytes": 1024962
+    },
+    {
+      "path": "data/pipeline_v1/video/evo_11_frames.zip",
+      "sha256": "699b38cbefe51d7c6a6eefe11afe83dbb2c9413484e857646632b0a3330086cb",
+      "bytes": 1330910
+    },
+    {
+      "path": "data/pipeline_v1/video/frame_manifest.csv",
+      "sha256": "c9ce3ec2eb0ea004196e812555c4dee2759d6e44faae7b7930d7e88b0cc8ec50",
+      "bytes": 3862
+    }
+  ],
+  "source_output_mapping": [
+    {
+      "source": "data/raw/evo_10.mp4",
+      "output": "data/pipeline_v1/video/evo_10_frames.zip"
+    },
+    {
+      "source": "data/raw/evo_11.mp4",
+      "output": "data/pipeline_v1/video/evo_11_frames.zip"
+    },
+    {
+      "source": "data/raw/video-ground-truths.csv",
+      "output": "data/pipeline_v1/video/frame_manifest.csv"
+    }
+  ],
+  "validation": "PASS: outputs exist, are non-empty, and are fingerprinted",
+  "limitations": "Clip labels are binary and have no event intervals; sparse sampled frames do not establish event-time performance."
+}

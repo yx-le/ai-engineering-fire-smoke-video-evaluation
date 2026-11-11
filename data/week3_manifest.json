@@ -1,0 +1,30 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-11T10:12:42.801390+00:00",
+  "records": [
+    {
+      "source_filename": "evo_10.mp4",
+      "source_sha256": "b121507d77d433477e0de45b02f89ed4da58101bdf4d2129b66d99d07353f78b",
+      "prepared_output": "data/processed/week3_video/evo_10_frames.zip",
+      "prepared_sha256": "aa00ef4053115f7486b571f144b6ef008852d7b24a318081c4f5709d5bed5b1a",
+      "prepared_bytes": 1024962,
+      "processing_note": "Sample one frame every 2 seconds from t=0; resize longest edge to <=640 px; JPEG quality 90; preserve clip ID, source frame index, timestamp, dimensions, and clip-level label.",
+      "source_id": "S01",
+      "source_version": "Boreal Forest Fire Dataset, Subset B; released 2025-02-28",
+      "access_rights": "CC BY 4.0; retain attribution",
+      "known_limitation": "Clip-level binary labels have no event intervals; sparse frames cannot establish event timing or detector performance."
+    },
+    {
+      "source_filename": "evo_11.mp4",
+      "source_sha256": "833746765ac31f7f8ca5a66ee0dc24cef1de40a8a997ea58a674d7139f03767e",
+      "prepared_output": "data/processed/week3_video/evo_11_frames.zip",
+      "prepared_sha256": "586c677923abc4a8d4fdedb8f5074b9bbd710dbca840b8da2733fc831a5e752a",
+      "prepared_bytes": 1330910,
+      "processing_note": "Sample one frame every 2 seconds from t=0; resize longest edge to <=640 px; JPEG quality 90; preserve clip ID, source frame index, timestamp, dimensions, and clip-level label.",
+      "source_id": "S02",
+      "source_version": "Boreal Forest Fire Dataset, Subset B; released 2025-02-28",
+      "access_rights": "CC BY 4.0; retain attribution",
+      "known_limitation": "Clip-level binary labels have no event intervals; sparse frames cannot establish event timing or detector performance."
+    }
+  ]
+}

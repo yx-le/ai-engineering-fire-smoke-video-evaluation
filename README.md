@@ -81,6 +81,8 @@ Use a manually checked, video-level split to avoid placing near-identical neighb
 | Week | Focus | Deliverable | Status |
 | --- | --- | --- | --- |
 | W1 | System map + project scope | README + docs | Complete |
+| W2 | Requirements, evaluation criteria, architecture | docs/week2_*.md, architecture PNG and Draw.io source | Complete in GitHub |
+| W3 | Data source selection, preparation, and pipeline | Inventory + executed Colab notebook + pipeline artifacts | Parts A, B, and C executed; video pipeline repeatability passed; artifacts and docs synced |
 
 ## Repository Structure
 
@@ -91,6 +93,17 @@ docs/
   week1_observation_sheet.md
   week1_system_map.png
   week1_project_scope.md
+  week2_requirements.md
+  week2_evaluation_criteria.md
+  week2_architecture_decisions.md
+  week3_data_inventory.md
+  week3_partB_preparation.md
+  week3_partB_manual_steps.md
+  week3_partA_manual_steps.md
+  week3_partC_pipeline_decisions.md
+  week3_partC_manual_steps.md
+  week3_pipeline_diagram.drawio
+  week3_pipeline_diagram.png
   group_evidence/
     README.md
     evidence/
@@ -99,13 +112,23 @@ docs/
       week1_system_map_notes.md
 data/
   .gitkeep
+  pipeline_v1/
+    video/
+      evo_10_frames.zip
+      evo_11_frames.zip
+      frame_manifest.csv
+      pipeline_manifest.json
 src/
   .gitkeep
 notebooks/
+  week3_pipeline.ipynb
   .gitkeep
 evaluation/
   .gitkeep
 prompts/
   .gitkeep
 ```
+
+The Week 3 Part C outputs contain prepared frames and provenance metadata only. Raw videos remain outside the repository; follow the source dataset's access and redistribution terms.
+
 
