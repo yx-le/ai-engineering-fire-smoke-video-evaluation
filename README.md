@@ -83,6 +83,7 @@ Use a manually checked, video-level split to avoid placing near-identical neighb
 | W1 | System map + project scope | README + docs | Complete |
 | W2 | Requirements, evaluation criteria, architecture | docs/week2_*.md, architecture PNG and Draw.io source | Complete in GitHub |
 | W3 | Data source selection, preparation, and pipeline | Inventory + executed Colab notebook + pipeline artifacts | Parts A, B, and C executed; video pipeline repeatability passed; artifacts and docs synced |
+| W4 | Data quality, bias, and governance | [Quality report](docs/week4_data_quality_report.md) | GO WITH CONDITIONS for pipeline integration |
 
 ## Week 3 evidence
 
@@ -101,6 +102,12 @@ Extract both ZIPs in each folder into the destination shown below. Extract the c
 | Part C under `data/pipeline_v1/video/` | `data/pipeline_v1/video/frames/` |
 
 After extraction, resolve the `prepared_image` column from the repository root. For a fresh Colab run, download the source files listed in the inventory and upload `evo_10.mp4`, `evo_11.mp4`, and the original semicolon-delimited `video-ground-truths.csv` into `/content/week3_project/data/raw/` after running the setup cell.
+
+## Week 4 reviewed corpus for Topic 7 (Week 9)
+
+Use the [reviewed frame index](data/quality_v1/video/frame_manifest_clean.csv) and [frame provenance JSONL](data/quality_v1/video/prepared_frames_clean.jsonl) as the Topic 7 inputs. The index still resolves images through the verified Week 3 frame ZIPs. For code using the course record interface, load the [course JSONL](data/prepared_chunks_clean.jsonl) or the [matching PKL](data/chunks_clean.pkl) from this repository.
+
+The [executed notebook](notebooks/week4_quality.ipynb) documents validation and coverage. The [quality report](docs/week4_data_quality_report.md) records the conditions for using this subset in later evaluation.
 
 ## Repository Structure
 
