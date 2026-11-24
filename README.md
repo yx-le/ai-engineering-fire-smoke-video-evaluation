@@ -2,7 +2,7 @@
 
 > A proposed offline evaluation tool for reviewing how video-based fire and smoke detectors behave across public research clips and difficult scenes.
 
-**Status:** Week 1 individual project scope. This repository does not contain a working detector yet.
+**Status** — Week 3 video preparation pipeline complete. Detector implementation and evaluation are future project work.
 
 ## Problem Statement
 
@@ -83,6 +83,24 @@ Use a manually checked, video-level split to avoid placing near-identical neighb
 | W1 | System map + project scope | README + docs | Complete |
 | W2 | Requirements, evaluation criteria, architecture | docs/week2_*.md, architecture PNG and Draw.io source | Complete in GitHub |
 | W3 | Data source selection, preparation, and pipeline | Inventory + executed Colab notebook + pipeline artifacts | Parts A, B, and C executed; video pipeline repeatability passed; artifacts and docs synced |
+
+## Week 3 evidence
+
+- Part A records source selection and inspection. [Data inventory](docs/week3_data_inventory.md)
+- Part B records frame preparation and the source-to-output hashes. [Preparation record](docs/week3_partB_preparation.md) · [Prepared exports](data/processed/week3_video/) · [Lineage manifest](data/week3_manifest.json)
+- Part C records the workflow and its repeatability check. [Pipeline decisions](docs/week3_pipeline_decisions.md) · [Pipeline diagram](docs/week3_pipeline_diagram.png) · [Run outputs](data/pipeline_v1/video/) · [Executed notebook](notebooks/week3_pipeline.ipynb)
+- The reading and PDF inspection exercise is recorded separately. [PDF preparation notes](docs/week3_pdf_inspection.md)
+
+### Open the prepared frames
+
+Extract both ZIPs in each folder into the destination shown below. Extract the contents directly so the archive's `evo_10/` or `evo_11/` directory appears immediately under the destination.
+
+| Archives | Extraction destination |
+| --- | --- |
+| Part B under `data/processed/week3_video/` | `data/processed/week3_video/` |
+| Part C under `data/pipeline_v1/video/` | `data/pipeline_v1/video/frames/` |
+
+After extraction, resolve the `prepared_image` column from the repository root. For a fresh Colab run, download the source files listed in the inventory and upload `evo_10.mp4`, `evo_11.mp4`, and the original semicolon-delimited `video-ground-truths.csv` into `/content/week3_project/data/raw/` after running the setup cell.
 
 ## Repository Structure
 

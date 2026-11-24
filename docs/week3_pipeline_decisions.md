@@ -18,7 +18,7 @@ The project selects the **computer-vision/image pathway**, adapted for prerecord
 
 ## Source and preparation evidence
 
-Inputs are `evo_10.mp4`, `evo_11.mp4`, and `video-ground-truths.csv`. The clips are 4096×2160 at approximately 47.952 fps, with durations about 29.59 s and 32.32 s; the label CSV has 288 rows and columns `Filename` and `Has Smoke`. Part B compared 1-second sampling (63 frames) with 2-second sampling (32 frames). The selected 2-second interval reduces the sample count by about 49% while retaining clip/frame identity and time metadata. The labels are clip-level binary labels, not event intervals.
+Inputs are `evo_10.mp4`, `evo_11.mp4`, and `video-ground-truths.csv`. The clips are 4096×2160 at approximately 47.952 fps, with durations about 29.59 s and 32.32 s; the label CSV has 288 rows and columns `Filename` and `Has Smoke`. Part B estimated 63 frames for one-second sampling from the clip durations and exported 32 frames at the selected two-second interval. The observed export contains about 49% fewer frames than the one-second estimate while retaining clip/frame identity and time metadata. The labels are clip-level binary labels, not event intervals.
 
 ## Chosen configuration and outputs
 

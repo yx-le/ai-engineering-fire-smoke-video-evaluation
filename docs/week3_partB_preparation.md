@@ -6,14 +6,14 @@ The project uses prerecorded smoke videos. The lab has no dedicated video pathwa
 
 ## Comparison and decision
 
-Two sampling configurations were compared using the inspected durations and the same 640-pixel maximum image edge:
+The clip durations were used to estimate the one-second frame count. The two-second count was verified from the actual export. Both configurations use a 640-pixel maximum image edge.
 
 | Configuration | `evo_10.mp4` | `evo_11.mp4` | Total frames |
 |---|---:|---:|---:|
-| One frame per second | 30 | 33 | 63 |
-| One frame every two seconds (selected) | 15 | 17 | 32 |
+| One frame per second (metadata estimate) | 30 | 33 | 63 |
+| One frame every two seconds (selected and exported) | 15 | 17 | 32 |
 
-The two-second setting reduces the prepared sample by about 49% compared with one-second sampling while retaining clip ID, source frame index, timestamp, original dimensions, prepared dimensions, and the clip-level smoke label. The accepted limitation is that sparse sampling can miss brief changes and cannot support event timing. The source labels are clip-level only.
+The exported sample is about 49% smaller than the estimated one-second sample while retaining clip ID, source frame index, timestamp, original dimensions, prepared dimensions, and the clip-level smoke label. The accepted limitation is that sparse sampling can miss brief changes and cannot support event timing. The source labels are clip-level only.
 
 ## Preparation applied
 
